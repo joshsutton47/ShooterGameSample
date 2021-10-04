@@ -53,6 +53,11 @@ public class PlayerController : MonoBehaviour
             CanFire = false;
             Invoke("EnableFire", ReloadDelay);
         }
+        
+        void EnableFire()
+        {
+            CanFire = true;
+        }
 
         //Look at mouse
         if (MouseLook)
